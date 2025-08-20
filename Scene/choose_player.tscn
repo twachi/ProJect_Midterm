@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=3 uid="uid://dojir8maradd1"]
+
+[ext_resource type="Script" uid="uid://br3agbx2aibvw" path="res://Scene/choose_player.gd" id="1_hjpbw"]
+
+[node name="Choose_player" type="Node2D"]
+script = ExtResource("1_hjpbw")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Elendros" type="Button" parent="CanvasLayer"]
+offset_left = 723.0
+offset_top = 266.0
+offset_right = 799.0
+offset_bottom = 297.0
+text = "Elendros"
+
+[node name="Nymera" type="Button" parent="CanvasLayer"]
+offset_left = 161.0
+offset_top = 263.0
+offset_right = 240.0
+offset_bottom = 294.0
+text = "Nymera"
+
+[connection signal="pressed" from="CanvasLayer/Elendros" to="." method="_on_elendros_pressed"]
+[connection signal="pressed" from="CanvasLayer/Nymera" to="." method="_on_nymera_pressed"]

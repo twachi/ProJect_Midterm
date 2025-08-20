@@ -1,0 +1,30 @@
+{
+	"Healing Potion": {
+		"ItemCategory": "Consumable",
+		"StackSize": 99,
+		"Description": "A magic potion that create by unknown wizard they said it will help you fell better."
+	},
+	"Increase Max Hp Potion": {
+		"ItemCategory": "Consumable",
+		"StackSize": 99,
+		"Description": "Try it !!"
+	},
+	"Atk Potion": {
+		"ItemCategory": "Consumable",
+		"StackSize": 99,
+		"Description": "Try it !!"
+	},
+	"Antidote Potion": {
+		"ItemCategory": "Consumable",
+		"StackSize": 99,
+		"Description": "It will help you trust me"
+	},
+	"Logs": {
+		"ItemCategory": "Resource",
+		"StackSize": 3,
+		"Description": "Normal logs. Maybe it helps you to build something?"
+	}
+	
+}
+	
+	

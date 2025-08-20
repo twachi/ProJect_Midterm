@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://vivs42lcdx01"]
+
+[ext_resource type="Script" uid="uid://blwsjoartka1o" path="res://Scene/item.gd" id="1_m1cbo"]
+[ext_resource type="Texture2D" uid="uid://cotpdtfxl44hj" path="res://Asset_Midterm/Item/Healing Potion.png" id="2_wncjd"]
+[ext_resource type="FontFile" uid="uid://bdl4qpamcrivq" path="res://Fonts/OBGB.TTF" id="3_2ovjx"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_sfqn0"]
+
+[node name="Item" type="Node2D"]
+script = ExtResource("1_m1cbo")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+texture = ExtResource("2_wncjd")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 18.0
+offset_top = 23.0
+offset_right = 44.0
+offset_bottom = 43.0
+scale = Vector2(0.76, 0.76)
+theme_override_fonts/font = ExtResource("3_2ovjx")
+text = "1"
+label_settings = SubResource("LabelSettings_sfqn0")
+horizontal_alignment = 2

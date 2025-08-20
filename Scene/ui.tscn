@@ -1,0 +1,47 @@
+[gd_scene load_steps=5 format=3 uid="uid://bxmjrrti6weix"]
+
+[ext_resource type="Texture2D" uid="uid://c02hk8gklv3yv" path="res://Asset_Midterm/UI/UI/ValueBar_128x16.png" id="1_urowa"]
+[ext_resource type="Texture2D" uid="uid://dc3wk2ovxupxh" path="res://Asset_Midterm/UI/UI/ValueRed_120x8.png" id="2_ls17r"]
+[ext_resource type="Texture2D" uid="uid://cj181y6p4ikil" path="res://Asset_Midterm/UI/UI/BlackBigCircleBoxWithBorder_27x27.png" id="3_thkpk"]
+[ext_resource type="Texture2D" uid="uid://b241iedr6hbil" path="res://Asset_Midterm/UI/Player_UI/Nymera.png" id="4_3cm36"]
+
+[node name="UI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+scale = Vector2(3, 3)
+transform = Transform2D(3, 0, 0, 3, 0, 0)
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="CanvasLayer"]
+offset_left = 42.3333
+offset_top = 11.0
+offset_right = 170.333
+offset_bottom = 27.0
+value = 100.0
+texture_under = ExtResource("1_urowa")
+texture_progress = ExtResource("2_ls17r")
+texture_progress_offset = Vector2(4, 4)
+tint_under = Color(0.666569, 0.666569, 0.666569, 1)
+tint_progress = Color(0.825381, 0.446303, 0.441366, 1)
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+modulate = Color(0.666667, 0.666667, 0.666667, 1)
+offset_left = 5.0
+offset_top = 4.0
+offset_right = 51.0
+offset_bottom = 49.0
+texture = ExtResource("3_thkpk")
+
+[node name="Nymera" type="TextureRect" parent="CanvasLayer"]
+modulate = Color(0.787759, 0.787759, 0.787759, 1)
+offset_left = -68.3333
+offset_top = -17.0
+offset_right = 4651.67
+offset_bottom = 3263.0
+scale = Vector2(0.0400003, 0.0400003)
+texture = ExtResource("4_3cm36")

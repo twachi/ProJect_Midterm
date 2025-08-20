@@ -1,0 +1,328 @@
+[gd_scene load_steps=62 format=3 uid="uid://cf2v0xh2idmq5"]
+
+[ext_resource type="Script" uid="uid://2wujef1w1v61" path="res://Script/priest.gd" id="1_lonl8"]
+[ext_resource type="Texture2D" uid="uid://0mgbck1hr8im" path="res://Asset_Midterm/Monster/The_under/Priest/cultist_priest_sprite_pack/cultist_priest_idle_1.png" id="1_tays1"]
+[ext_resource type="Texture2D" uid="uid://cp22lddxs0u8l" path="res://Asset_Midterm/Monster/The_under/Priest/cultist_priest_sprite_pack/cultist_priest_die_1.png" id="2_6vubc"]
+[ext_resource type="Texture2D" uid="uid://d4j4hlmnp8k4y" path="res://Asset_Midterm/Monster/The_under/Priest/cultist_priest_sprite_pack/cultist_priest_idle_2.png" id="2_ibj7r"]
+[ext_resource type="Texture2D" uid="uid://baotar0upl8ha" path="res://Asset_Midterm/Monster/The_under/Priest/cultist_priest_sprite_pack/cultist_priest_takehit_1.png" id="2_ll750"]
+[ext_resource type="Texture2D" uid="uid://cc7pc2t2rrdro" path="res://Asset_Midterm/Monster/The_under/Priest/cultist_priest_sprite_pack/cultist_priest_idle_3.png" id="3_5ullj"]
+[ext_resource type="Texture2D" uid="uid://dbju560k827hu" path="res://Asset_Midterm/Monster/The_under/Priest/cultist_priest_sprite_pack/cultist_priest_takehit_2.png" id="3_6bbs3"]
+[ext_resource type="Texture2D" uid="uid://ckivr6sfnew1g" path="res://Asset_Midterm/Monster/The_under/Priest/cultist_priest_sprite_pack/cultist_priest_die_2.png" id="3_xocuv"]
+[ext_resource type="Texture2D" uid="uid://huqk82ds23ow" path="res://Asset_Midterm/Monster/The_under/Priest/cultist_priest_sprite_pack/cultist_priest_die_3.png" id="4_4dn7x"]
+[ext_resource type="Texture2D" uid="uid://dn3ru52w0e7d2" path="res://Asset_Midterm/Monster/The_under/Priest/cultist_priest_sprite_pack/cultist_priest_takehit_3.png" id="4_8totg"]
+[ext_resource type="Texture2D" uid="uid://ctiojvyyqjlfr" path="res://Asset_Midterm/Monster/The_under/Priest/cultist_priest_sprite_pack/cultist_priest_idle_4.png" id="4_if1vm"]
+[ext_resource type="Texture2D" uid="uid://t388b1kkmwdx" path="res://Asset_Midterm/Monster/The_under/Priest/cultist_priest_sprite_pack/cultist_priest_idle_5.png" id="5_nlrwb"]
+[ext_resource type="Texture2D" uid="uid://lfiux0wt3fxu" path="res://Asset_Midterm/Monster/The_under/Priest/cultist_priest_sprite_pack/cultist_priest_die_4.png" id="5_qrb5t"]
+[ext_resource type="Texture2D" uid="uid://dmod2okh60kvx" path="res://Asset_Midterm/Monster/The_under/Priest/cultist_priest_sprite_pack/cultist_priest_takehit_4.png" id="5_s1uyn"]
+[ext_resource type="Texture2D" uid="uid://bae7dc2o41cb6" path="res://Asset_Midterm/Monster/The_under/Priest/cultist_priest_sprite_pack/cultist_priest_die_5.png" id="6_7ygdw"]
+[ext_resource type="Texture2D" uid="uid://bsawpf2dnklnu" path="res://Asset_Midterm/Monster/The_under/Priest/cultist_priest_sprite_pack/cultist_priest_attack_1.png" id="6_re6qs"]
+[ext_resource type="Texture2D" uid="uid://c66n3hvx0s7ya" path="res://Asset_Midterm/Monster/The_under/Priest/cultist_priest_sprite_pack/cultist_priest_die_6.png" id="7_45fcp"]
+[ext_resource type="Texture2D" uid="uid://cyvl0w0hokrmw" path="res://Asset_Midterm/Monster/The_under/Priest/cultist_priest_sprite_pack/cultist_priest_attack_2.png" id="7_lonl8"]
+[ext_resource type="Texture2D" uid="uid://cufg68hlsqtp5" path="res://Asset_Midterm/Monster/The_under/Priest/cultist_priest_sprite_pack/cultist_priest_attack_3.png" id="8_pb54s"]
+[ext_resource type="Texture2D" uid="uid://raqxesj0s66e" path="res://Asset_Midterm/Monster/The_under/Priest/cultist_priest_sprite_pack/cultist_priest_attack_4.png" id="9_y7owv"]
+[ext_resource type="Texture2D" uid="uid://7siis1pa0tfr" path="res://Asset_Midterm/Monster/The_under/Priest/cultist_priest_sprite_pack/cultist_priest_attack_5.png" id="10_l1756"]
+[ext_resource type="Texture2D" uid="uid://doyqe48qa6igi" path="res://Asset_Midterm/Monster/The_under/Priest/cultist_priest_sprite_pack/cultist_priest_walk_1.png" id="11_ll750"]
+[ext_resource type="Texture2D" uid="uid://dtgvku80ajoh5" path="res://Asset_Midterm/Monster/The_under/Priest/cultist_priest_sprite_pack/cultist_priest_walk_2.png" id="12_6bbs3"]
+[ext_resource type="Texture2D" uid="uid://bctlswmj7atoc" path="res://Asset_Midterm/Monster/The_under/Priest/cultist_priest_sprite_pack/cultist_priest_walk_3.png" id="13_8totg"]
+[ext_resource type="Texture2D" uid="uid://5a756ebpujm4" path="res://Asset_Midterm/Monster/The_under/Priest/cultist_priest_sprite_pack/cultist_priest_walk_4.png" id="14_s1uyn"]
+[ext_resource type="Texture2D" uid="uid://cc68qrvk6h0gc" path="res://Asset_Midterm/Monster/The_under/Priest/cultist_priest_sprite_pack/cultist_priest_walk_5.png" id="15_b2586"]
+[ext_resource type="Texture2D" uid="uid://dqdvsim62a6yn" path="res://Asset_Midterm/Monster/The_under/Priest/cultist_priest_sprite_pack/cultist_priest_walk_6.png" id="16_qhuim"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_24svj"]
+atlas = ExtResource("2_6vubc")
+region = Rect2(0, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_djfng"]
+atlas = ExtResource("3_xocuv")
+region = Rect2(0, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_11kiq"]
+atlas = ExtResource("4_4dn7x")
+region = Rect2(0, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ilki6"]
+atlas = ExtResource("5_qrb5t")
+region = Rect2(0, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t401y"]
+atlas = ExtResource("6_7ygdw")
+region = Rect2(0, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_alg6l"]
+atlas = ExtResource("7_45fcp")
+region = Rect2(0, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b2586"]
+atlas = ExtResource("2_ll750")
+region = Rect2(0, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qhuim"]
+atlas = ExtResource("3_6bbs3")
+region = Rect2(0, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bh84i"]
+atlas = ExtResource("4_8totg")
+region = Rect2(0, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_odvqg"]
+atlas = ExtResource("5_s1uyn")
+region = Rect2(0, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x073c"]
+atlas = ExtResource("1_tays1")
+region = Rect2(0, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u7yav"]
+atlas = ExtResource("2_ibj7r")
+region = Rect2(0, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o7pgk"]
+atlas = ExtResource("3_5ullj")
+region = Rect2(0, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d5ptt"]
+atlas = ExtResource("4_if1vm")
+region = Rect2(0, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xbugv"]
+atlas = ExtResource("5_nlrwb")
+region = Rect2(0, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6vubc"]
+atlas = ExtResource("6_re6qs")
+region = Rect2(0, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xocuv"]
+atlas = ExtResource("7_lonl8")
+region = Rect2(0, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4dn7x"]
+atlas = ExtResource("8_pb54s")
+region = Rect2(0, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qrb5t"]
+atlas = ExtResource("9_y7owv")
+region = Rect2(0, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7ygdw"]
+atlas = ExtResource("10_l1756")
+region = Rect2(0, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_45fcp"]
+atlas = ExtResource("11_ll750")
+region = Rect2(0, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6gxmx"]
+atlas = ExtResource("12_6bbs3")
+region = Rect2(0, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6bx0b"]
+atlas = ExtResource("13_8totg")
+region = Rect2(0, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ivqcd"]
+atlas = ExtResource("14_s1uyn")
+region = Rect2(0, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cuk4n"]
+atlas = ExtResource("15_b2586")
+region = Rect2(0, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_npm73"]
+atlas = ExtResource("16_qhuim")
+region = Rect2(0, 0, 200, 200)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_06t0d"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_24svj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_djfng")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_11kiq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ilki6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t401y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_alg6l")
+}],
+"loop": false,
+"name": &"Died",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b2586")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qhuim")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bh84i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_odvqg")
+}],
+"loop": false,
+"name": &"Hurt",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x073c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u7yav")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o7pgk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d5ptt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xbugv")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6vubc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xocuv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4dn7x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qrb5t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7ygdw")
+}],
+"loop": false,
+"name": &"attack",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_45fcp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6gxmx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6bx0b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ivqcd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cuk4n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_npm73")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_re6qs"]
+size = Vector2(59, 128)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lonl8"]
+size = Vector2(375, 269)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pb54s"]
+size = Vector2(375, 269)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y7owv"]
+size = Vector2(94, 175)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l1756"]
+size = Vector2(92, 175)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ll750"]
+size = Vector2(143, 181)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6bbs3"]
+size = Vector2(59, 127)
+
+[node name="Preist" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+modulate = Color(0.674815, 0.674815, 0.674815, 1)
+script = ExtResource("1_lonl8")
+speed = 60
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
+sprite_frames = SubResource("SpriteFrames_06t0d")
+animation = &"Idle"
+frame_progress = 0.0353335
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+visible = false
+position = Vector2(0.5, 15)
+shape = SubResource("RectangleShape2D_re6qs")
+
+[node name="Detect_Zone_l" type="Area2D" parent="CharacterBody2D"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/Detect_Zone_l"]
+position = Vector2(193.5, -50.5)
+shape = SubResource("RectangleShape2D_lonl8")
+
+[node name="Detect_zone_r" type="Area2D" parent="CharacterBody2D"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/Detect_zone_r"]
+position = Vector2(-195.5, -50.5)
+shape = SubResource("RectangleShape2D_pb54s")
+
+[node name="attack_zone_left" type="Area2D" parent="CharacterBody2D" groups=["Mon_hit"]]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/attack_zone_left" groups=["Mon_hit"]]
+position = Vector2(47, 18.5)
+shape = SubResource("RectangleShape2D_y7owv")
+disabled = true
+
+[node name="attack_zone_right" type="Area2D" parent="CharacterBody2D" groups=["Mon_hit"]]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/attack_zone_right" groups=["Mon_hit"]]
+position = Vector2(-46, 18.5)
+shape = SubResource("RectangleShape2D_l1756")
+disabled = true
+
+[node name="Area_attack" type="Area2D" parent="CharacterBody2D"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/Area_attack"]
+position = Vector2(-0.5, 18.5)
+shape = SubResource("RectangleShape2D_ll750")
+
+[node name="Hit_box" type="Area2D" parent="CharacterBody2D"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/Hit_box"]
+position = Vector2(1.5, 15.5)
+shape = SubResource("RectangleShape2D_6bbs3")
+
+[connection signal="area_entered" from="CharacterBody2D/Detect_Zone_l" to="CharacterBody2D" method="_on_detect_zone_l_area_entered"]
+[connection signal="area_exited" from="CharacterBody2D/Detect_Zone_l" to="CharacterBody2D" method="_on_detect_zone_l_area_exited"]
+[connection signal="area_entered" from="CharacterBody2D/Detect_zone_r" to="CharacterBody2D" method="_on_detect_zone_r_area_entered"]
+[connection signal="area_entered" from="CharacterBody2D/Area_attack" to="CharacterBody2D" method="_on_area_attack_area_entered"]
+[connection signal="area_exited" from="CharacterBody2D/Area_attack" to="CharacterBody2D" method="_on_area_attack_area_exited"]
+[connection signal="area_entered" from="CharacterBody2D/Hit_box" to="CharacterBody2D" method="_on_hit_box_area_entered"]
